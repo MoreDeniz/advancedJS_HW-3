@@ -1,0 +1,44 @@
+<!-- Урок 3. Промисы. Хранилище
+
+Создайте интерактивную веб-страницу для оставления и просмотра отзывов о продуктах. Пользователи могут добавлять отзывы о различных продуктах и просматривать добавленные отзывы.
+
+Страница добавления отзыва:
+
+Поле для ввода названия продукта.
+Текстовое поле для самого отзыва.
+Кнопка "Добавить отзыв", которая сохраняет отзыв о продукте в LocalStorage.
+
+Страница просмотра отзывов:
+
+Показывает список всех продуктов, о которых были оставлены отзывы.
+При клике на название продукта отображается список всех отзывов по этому продукту.
+Возможность удаления отзыва (при нажатии на кнопку "Удалить" рядом с отзывом, данный отзыв удаляется из LocalStorage). -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW3-Reviews</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container_review container">
+        <h2 class="index-main">Отзывы</h2>
+        <!-- <div class="container_review">
+
+        </div>
+        <input type="text" name="product" id="product" placeholder="Товар" required>
+        <textarea type="text" name="review" id="review" placeholder="Отзыв" required></textarea>
+        <p class="error"></p> -->
+        <div class="btn-container">
+            <button type="submit" id="addReview">Добавить отзыв</button>
+            <button type="submit" id="showReviews">Посмотреть отзывы</button>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
