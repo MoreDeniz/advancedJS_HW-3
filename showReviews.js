@@ -8,13 +8,13 @@ for (let i = 0; i < localStorage.length; i++) {
     productNames.forEach((product) => {
         // Создаём элементы html для нового отзыва: div, h3, ul
         let reviewBox = document.createElement("div");
-        let name = document.createElement("h3");
+        let name = document.createElement("h4");
         let ul = document.createElement("ul");
         const productReviews = JSON.parse(localStorage.getItem(product));
 
         reviewBox.append(name, ul);
         reviewBox.addEventListener("click", ({target}) => {
-            if (target.tagName === "P") {
+            if (target.tagName === "h4") {
                 if (ul.innerHTML !== "") {
                     ul.innerHTML = "";
                 } else {
@@ -47,5 +47,14 @@ for (let i = 0; i < localStorage.length; i++) {
         li.append(span, removeBtn);
         return li;
     }
+
+// Переход на домашнюю страницу 
+    const backBtn = document.getElementById("back");
+
+if (backBtn) {
+    backBtn.addEventListener("click", function () {
+        window.location.href = "index.html";
+    });
+}
 
 

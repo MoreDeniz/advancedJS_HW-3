@@ -28,6 +28,15 @@ addButton.addEventListener("click", () => {
   productInput.value = reviewInput.value = "";
 });
 
+// Переход на домашнюю страницу 
+const backBtn = document.getElementById("back");
+
+if (backBtn) {
+    backBtn.addEventListener("click", function () {
+        window.location.href = "index.html";
+    });
+}
+
 // function addReview() {
 //     initialData.forEach((element) => {
 //       // Элементы отзыва

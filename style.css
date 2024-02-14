@@ -70,3 +70,8 @@ button {
 .index-main {
     text-align: center;
 }
+
+.buttons {
+    display: flex;
+    gap: 60px;
+}

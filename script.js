@@ -1,6 +1,6 @@
 const addReviewsBtn = document.getElementById("addReview");
 
-// Переход на страницу отзывов
+// Переход на страницу добавления отзывов
 if (addReviewsBtn) {
     addReviewsBtn.addEventListener("click", function () {
         window.location.href = "addReview.html";
