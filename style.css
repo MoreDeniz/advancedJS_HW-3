@@ -45,11 +45,11 @@ button {
     gap: 32px;
 }
 
-#addReview {
+#addReview, #add_review {
     background-color: #138656;
 }
 
-#addReview:hover {
+#addReview:hover, #add_review:hover {
      background-color: rgb(19, 97, 107);
 }
 
@@ -59,11 +59,11 @@ button {
     border: 1px solid #138656;
 }
 
-#showReviews {
-    background-color: #db6186;
+#showReviews, #back {
+    background-color: #a8506a;
 }
 
-#lookReviews:hover {
+#lookReviews:hover, #back:hover {
      background-color: rgb(168, 31, 116);
 }
 

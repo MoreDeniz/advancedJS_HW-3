@@ -6,7 +6,7 @@ for (let i = 0; i < localStorage.length; i++) {
     productNames.push(localStorage.key(i));
 }
     productNames.forEach((product) => {
-        // Создаём элементы html для нового отзыва: div, h3, p
+        // Создаём элементы html для нового отзыва: div, h3, ul
         let reviewBox = document.createElement("div");
         let name = document.createElement("h3");
         let ul = document.createElement("ul");
@@ -18,7 +18,7 @@ for (let i = 0; i < localStorage.length; i++) {
                 if (ul.innerHTML !== "") {
                     ul.innerHTML = "";
                 } else {
-                    productReview.forEach((view) => {
+                    productReviews.forEach((view) => {
                         ul.append(updateReviewsList(product, view, productReviews))
                     });
                 }
@@ -36,7 +36,7 @@ for (let i = 0; i < localStorage.length; i++) {
         span.innerText = `${view}`;
         removeBtn.innerText = "Удалить отзыв";
         removeBtn.addEventListener("click", () => {
-            productReviews.indexOf(view), 1;
+            productReviews.splice(productReviews.indexOf(view), 1);
             localStorage.setItem(product, JSON.stringify(productReviews));
             removeBtn.parentElement.remove();
             if (productReviews.length === 0) {
@@ -45,6 +45,7 @@ for (let i = 0; i < localStorage.length; i++) {
         });
 
         li.append(span, removeBtn);
+        return li;
     }
 
 
