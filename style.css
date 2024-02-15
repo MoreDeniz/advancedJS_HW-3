@@ -90,3 +90,11 @@ button:hover {
 #remove-btn:hover {
     background-color: #a44c62;
 }
+
+#li-review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}

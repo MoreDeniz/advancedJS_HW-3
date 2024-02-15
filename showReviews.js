@@ -33,6 +33,7 @@ for (let i = 0; i < localStorage.length; i++) {
 
     const updateReviewsList = (product, view, productViews) => {
         const li = document.createElement("li");
+        li.setAttribute('id', 'li-review');
         const span = document.createElement("span");
         const removeBtn = document.createElement("button");
         removeBtn.setAttribute('id', 'remove-btn');
