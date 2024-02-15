@@ -31,12 +31,17 @@ textarea {
 }
 
 button {
-    width: 160px;
-    padding: 16px;
+    width: 140px;
+    padding: 12px 4px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    color: lightcyan;
+    color: #fff;
+    background-color: #1cce84;
+}
+
+button:hover {
+    background-color: #138656;
 }
 
 .btn-container {
@@ -46,11 +51,11 @@ button {
 }
 
 #addReview, #add_review {
-    background-color: #138656;
+    background-color: #1cce84;
 }
 
 #addReview:hover, #add_review:hover {
-     background-color: rgb(19, 97, 107);
+     background-color: #0c995e;
 }
 
 #review {
@@ -60,11 +65,11 @@ button {
 }
 
 #showReviews, #back {
-    background-color: #a8506a;
+    background-color: #1cce84;
 }
 
-#lookReviews:hover, #back:hover {
-     background-color: rgb(168, 31, 116);
+#showReviews:hover, #back:hover {
+     background-color: #138656;
 }
 
 .index-main {
@@ -74,4 +79,14 @@ button {
 .buttons {
     display: flex;
     gap: 60px;
+}
+
+#remove-btn {
+    width: 60px;
+    padding: 4px;
+    background-color: #ed98ad;
+}
+
+#remove-btn:hover {
+    background-color: #a44c62;
 }
